@@ -339,6 +339,8 @@ import requests
 import json
 import random
 from collections import OrderedDict
+from mangum import Mangum  # adaptasi Flask ke serverless
+
 
 app = Flask(__name__)
 CORS(app)  # Enable CORS for all routes
@@ -720,6 +722,8 @@ def generate_tasrif():
 @app.route('/health', methods=['GET'])
 def health_check():
     return jsonify({"status": "healthy", "message": "Server is running"})
+handler = Mangum(app)  # buat agar bisa dijalankan serverless
 
 if __name__ == '__main__':
+
     app.run(debug=True, host='0.0.0.0', port=5000)
