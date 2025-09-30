@@ -10,7 +10,7 @@ CORS(app)
 
 # Gemini API configuration
 GEMINI_API_KEYS = [
-    "AIzaSyABMns2VWw5IuV6PYJhG1TJbIHl6-iJGGk",
+    "AIzaSyCxzxK8DY70VR9B1couQfJE6iFK3G3zSQI",
     "AIzaSyAPFGdmEGAolRlOLG53k8VVE3IdpuywfSs",
 ]
 GEMINI_TEXT_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent"
@@ -335,4 +335,5 @@ if __name__ == '__main__':
 else:
     # This is what Vercel will use
     application = app
+
 
