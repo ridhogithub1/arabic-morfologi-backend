@@ -13,7 +13,7 @@ GEMINI_API_KEYS = [
     "AIzaSyCxzxK8DY70VR9B1couQfJE6iFK3G3zSQI",
     "AIzaSyAPFGdmEGAolRlOLG53k8VVE3IdpuywfSs",
 ]
-GEMINI_TEXT_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent"
+GEMINI_TEXT_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-lite:generateContent"
 
 def get_random_api_key():
     """Get a random API key from the list"""
@@ -335,6 +335,7 @@ if __name__ == '__main__':
 else:
     # This is what Vercel will use
     application = app
+
 
 
 
